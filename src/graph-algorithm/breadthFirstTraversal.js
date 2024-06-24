@@ -26,4 +26,4 @@ const breadthFirstIterativePrint = (graph, source) => {
   }
 };
 
-breadthFirstIterativePrint(graph, "a"); //acbedf
+breadthFirstIterativePrint(graph, "a");

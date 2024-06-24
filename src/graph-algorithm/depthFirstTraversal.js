@@ -26,7 +26,7 @@ const depthFirstIterativePrint = (graph, source) => {
   }
 };
 console.log("Iterative approach");
-depthFirstIterativePrint(graph, "a"); // abdfce
+depthFirstIterativePrint(graph, "a");
 
 // Recursive approach
 const depthFirstRecursivePrint = (graph, source) => {
@@ -36,4 +36,4 @@ const depthFirstRecursivePrint = (graph, source) => {
   }
 };
 console.log("Recursive approach");
-depthFirstRecursivePrint(graph, "a"); // acbedf
+depthFirstRecursivePrint(graph, "a");
