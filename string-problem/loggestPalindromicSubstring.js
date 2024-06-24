@@ -1,0 +1,11 @@
+/* 
+Longest Palindromic Substring
+String Matching with Wildcard
+Edit Distance
+Longest Repeating Subsequence
+Count all distinct substrings of a given string
+Reverse words in a given string
+Check if a string is a rotated palindrome
+KMP Algorithm for Pattern Searching
+Minimum characters to be added at front to make string palindrome 
+*/
