@@ -15,7 +15,7 @@ const graph = {
 };
 
 // Iterative approach
-const breadthFirstIterativePrint = (graph, source) => {
+const breadthFirstIterativeTraversal = (graph, source) => {
   const queue = [source];
   while (queue.length > 0) {
     const current = queue.shift();
@@ -26,4 +26,4 @@ const breadthFirstIterativePrint = (graph, source) => {
   }
 };
 
-breadthFirstIterativePrint(graph, "a");
+breadthFirstIterativeTraversal(graph, "a");

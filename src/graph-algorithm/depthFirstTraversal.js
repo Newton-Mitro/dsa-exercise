@@ -15,7 +15,7 @@ const graph = {
 };
 
 // Iterative approach
-const depthFirstIterativePrint = (graph, source) => {
+const depthFirstIterativeTraversal = (graph, source) => {
   const stack = [source];
   while (stack.length > 0) {
     const current = stack.pop();
@@ -26,14 +26,14 @@ const depthFirstIterativePrint = (graph, source) => {
   }
 };
 console.log("Iterative approach");
-depthFirstIterativePrint(graph, "a");
+depthFirstIterativeTraversal(graph, "a");
 
 // Recursive approach
-const depthFirstRecursivePrint = (graph, source) => {
+const depthFirstRecursiveTraversal = (graph, source) => {
   console.log(source);
   for (let neighbor of graph[source]) {
-    depthFirstRecursivePrint(graph, neighbor);
+    depthFirstRecursiveTraversal(graph, neighbor);
   }
 };
 console.log("Recursive approach");
-depthFirstRecursivePrint(graph, "a");
+depthFirstRecursiveTraversal(graph, "a");
