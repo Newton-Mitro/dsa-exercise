@@ -1,4 +1,4 @@
-const buildAdjacencyGraph = (edges) => {
+export const buildAdjacencyGraph = (edges) => {
   const graph = {};
 
   for (let edge of edges) {
@@ -10,13 +10,3 @@ const buildAdjacencyGraph = (edges) => {
   }
   return graph;
 };
-
-const edges = [
-  ["w", "x"],
-  ["x", "y"],
-  ["z", "y"],
-  ["z", "v"],
-  ["w", "v"],
-];
-
-console.log(buildAdjacencyGraph(edges));
