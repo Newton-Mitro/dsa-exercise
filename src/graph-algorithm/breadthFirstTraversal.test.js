@@ -1,8 +1,8 @@
 import { assert, describe, it } from "vitest";
-import { breadthFirstIterativeTraversal } from "../src/graph-algorithm/breadthFirstTraversal";
+import { breadthFirstIterativeTraversal } from "./breadthFirstTraversal";
 
-describe("Breadth First Iterative Traversal", function () {
-  it("traversed all the nodes", function () {
+describe("Breadth First Traversal", function () {
+  it("Traversed iteratively in sequence of 'acbedf'", function () {
     // arrange
     const graph = {
       a: ["c", "b"],

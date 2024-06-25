@@ -5,35 +5,26 @@
 4. Complexity: n = nodes, e = edges, Time: O(e) and Space: O(n) | n = nodes, n^2 = edges, Time: O(n^2) and Space: O(n)
 */
 
-const graph = {
-  a: ["c", "b"],
-  b: ["d"],
-  c: ["e"],
-  d: ["f"],
-  e: [],
-  f: [],
-};
-
 // Iterative approach
-const depthFirstIterativeTraversal = (graph, source) => {
+export const depthFirstIterativeTraversal = (graph, source) => {
+  let visited = "";
   const stack = [source];
   while (stack.length > 0) {
     const current = stack.pop();
-    console.log(current);
+    visited += current;
     for (let neighbor of graph[current]) {
       stack.push(neighbor);
     }
   }
+  return visited;
 };
-console.log("Iterative approach");
-depthFirstIterativeTraversal(graph, "a");
 
 // Recursive approach
-const depthFirstRecursiveTraversal = (graph, source) => {
-  console.log(source);
+let visited = "";
+export const depthFirstRecursiveTraversal = (graph, source) => {
+  visited += source;
   for (let neighbor of graph[source]) {
     depthFirstRecursiveTraversal(graph, neighbor);
   }
+  return visited;
 };
-console.log("Recursive approach");
-depthFirstRecursiveTraversal(graph, "a");
