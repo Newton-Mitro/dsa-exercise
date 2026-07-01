@@ -1,23 +1,34 @@
-// Iterative
-export const linkedListValuesIterative = (head) => {
-  const values = [];
+class Node {
+  constructor(val, next = null) {
+    this.val = val;
+    this.next = next;
+  }
+}
+
+const a = new Node("A");
+const b = new Node("B");
+const c = new Node("C");
+const d = new Node("D");
+
+a.next = b;
+b.next = c;
+c.next = d;
+
+const getNodeValue = (head, index) => {
   let current = head;
+  let count = 0;
   while (current !== null) {
-    values.push(current.val);
+    if (count === index) return current.val;
+    count += 1;
     current = current.next;
   }
-  return values;
+  return null;
 };
 
-// recursive
-export const linkedListValuesRecursive = (head) => {
-  const values = [];
-  _linkedListValues(head, values);
-  return values;
-};
+// const getNodeValue = (head: Node | null, index: number): string | null => {
+//     if (head === null) return null;
+//     if (index === 0) return head.val;
+//     return getNodeValue(head.next, index-1);
+// }
 
-const _linkedListValues = (head, values) => {
-  if (head === null) return;
-  values.push(head.val);
-  _linkedListValues(head.next, values);
-};
+console.log(getNodeValue(a, 2));

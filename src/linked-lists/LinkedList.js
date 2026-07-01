@@ -1,7 +1,7 @@
-export class Node {
-  constructor(data, next = null) {
-    this.data = data;
-    this.next = null;
+class Node {
+  constructor(val, next = null) {
+    this.val = val;
+    this.next = next;
   }
 }
 
