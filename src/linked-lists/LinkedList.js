@@ -117,7 +117,7 @@ export class LinkedList {
     while (current != null) {
       // compare each element of the list
       // with given element
-      if (current.element === element) return count;
+      if (current.val === element) return count;
       count++;
       current = current.next;
     }
@@ -130,8 +130,17 @@ export class LinkedList {
   printListData() {
     let current = this.head;
     while (current) {
-      console.log(current.data);
+      console.log(current.val);
       current = current.next;
     }
   }
 }
+
+const ll = new LinkedList();
+ll.insertFirst(100);
+ll.insertFirst(200);
+ll.insertLast(300);
+ll.insertAt(400, 2);
+ll.printListData();
+
+console.log("Index of 400: ", ll.indexOf(400));
