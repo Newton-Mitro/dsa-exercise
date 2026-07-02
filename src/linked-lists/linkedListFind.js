@@ -1,21 +1,21 @@
-class Node {
+class ListNode {
   constructor(val, next = null) {
     this.val = val;
     this.next = next;
   }
 }
 
-const a = new Node(1);
-const b = new Node(2);
-const c = new Node(3);
-const d = new Node(4);
+const a = new ListNode(1);
+const b = new ListNode(2);
+const c = new ListNode(3);
+const d = new ListNode(4);
 
 // Link the nodes
 a.next = b;
 b.next = c;
 c.next = d;
 
-// const linkedListFind = (head: Node | null, target: number): boolean => {
+// const linkedListFind = (head, target) => {
 //   let currentNode = head;
 //   while (currentNode !== null) {
 //     if(currentNode.val === target) {

@@ -1,4 +1,4 @@
-class Node {
+class ListNode {
   constructor(val, next = null) {
     this.val = val;
     this.next = next;
@@ -13,13 +13,13 @@ export class LinkedList {
 
   // insert first node
   insertFirst(data) {
-    this.head = new Node(data, this.head);
+    this.head = new ListNode(data, this.head);
     this.size++;
   }
 
   // insert last node
   insertLast(data) {
-    let node = new Node(data);
+    let node = new ListNode(data);
     let current;
 
     if (!this.head) {
@@ -41,7 +41,7 @@ export class LinkedList {
       return console.log("Please enter a valid index.");
     else {
       // creates a new node
-      let node = new Node(data);
+      let node = new ListNode(data);
       let curr, prev;
 
       curr = this.head;

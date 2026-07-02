@@ -1,22 +1,21 @@
-class Node {
+class ListNode {
   constructor(val, next = null) {
     this.val = val;
     this.next = next;
   }
 }
 
-
-const a = new Node('A');
-const b = new Node('B');
-const c = new Node('C');
-const d = new Node('D');
+const a = new ListNode("A");
+const b = new ListNode("B");
+const c = new ListNode("C");
+const d = new ListNode("D");
 
 // Link the nodes
 a.next = b;
 b.next = c;
 c.next = d;
 
-// const reverseList = (head: Node | null): Node|null  => {
+// const reverseList = (head)  => {
 //     let prev = null;
 //     let current = head;
 //     while(current !== null){
@@ -28,11 +27,11 @@ c.next = d;
 //     return prev;
 // }
 
-const reverseList = (head: Node | null, prev: Node|null = null): Node|null  => {
-   if(head === null) return prev;
-   const next = head.next;
-   head.next = prev;
-   return reverseList(next, head);
-}
+const reverseList = (head, prev = null) => {
+  if (head === null) return prev;
+  const next = head.next;
+  head.next = prev;
+  return reverseList(next, head);
+};
 
 console.log(reverseList(a).val);
