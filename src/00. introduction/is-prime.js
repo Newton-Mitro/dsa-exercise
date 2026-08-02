@@ -6,3 +6,18 @@
 // For example, 7 is a prime because it is only divisible by 1 and 7. For example, 6 is not a prime because it is divisible by 1, 2, 3, and 6.
 
 // You can assume that the input number is a positive integer.
+
+const n = 8;
+
+const isPrime = (n) => {
+  if (n < 2) return false;
+  //   for (let i = 2; i < n; i++) {
+  //     if (n % i === 0) return false;
+  //   }
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) return false;
+  }
+  return true;
+};
+
+console.log(isPrime(n));
