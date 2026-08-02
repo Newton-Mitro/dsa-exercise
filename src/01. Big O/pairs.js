@@ -22,4 +22,4 @@ const pairs = (elements) => {
   return result;
 };
 
-console.log(JSON.stringify(pairs(["a", "b", "c"])));
+console.log(JSON.stringify(pairs(["a", "b", "c", "d"])));
