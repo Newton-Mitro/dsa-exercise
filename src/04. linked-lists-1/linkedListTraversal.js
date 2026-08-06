@@ -1,14 +1,14 @@
-class ListNode {
-  constructor(val, next = null) {
+class Node {
+  constructor(val) {
     this.val = val;
     this.next = next;
   }
 }
 
-const a = new ListNode("A");
-const b = new ListNode("B");
-const c = new ListNode("C");
-const d = new ListNode("D");
+const a = new Node("A");
+const b = new Node("B");
+const c = new Node("C");
+const d = new Node("D");
 
 a.next = b;
 b.next = c;

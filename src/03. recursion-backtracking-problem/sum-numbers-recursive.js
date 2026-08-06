@@ -16,3 +16,22 @@ const sumNumbers = (n) => {
 };
 
 console.log(sumNumbers(5)); // 15
+
+// Sum Array Recursive
+// Problem
+
+// Given an array of numbers, return the sum of all the numbers in the array.
+
+// Example:
+
+// sumArray([1, 2, 3, 4, 5]) → 15
+
+const numbers = [1, 2, 3, 4, 5];
+
+const sumArray = (arr) => {
+  if (arr.length === 0) return 0;
+
+  return arr[0] + sumArray(arr.slice(1));
+};
+
+console.log(sumArray(numbers)); // 15

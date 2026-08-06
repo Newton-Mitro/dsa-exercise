@@ -73,9 +73,6 @@
 
 ## 5. Binary Tree I
 
-- binary tree welcome
-- binary tree intro
-- binary tree warm-up
 - depth first values
 - breadth first values
 - depth-first vs breadth-first
@@ -93,8 +90,6 @@
 - binary tree multiple choice
 - level averages
 - leaf list
-- binary tree quiz
-- binary tree wrap up
 
 ## 6. Graph I
 

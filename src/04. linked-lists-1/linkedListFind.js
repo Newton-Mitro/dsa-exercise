@@ -1,14 +1,14 @@
-class ListNode {
-  constructor(val, next = null) {
+class Node {
+  constructor(val) {
     this.val = val;
     this.next = next;
   }
 }
 
-const a = new ListNode(1);
-const b = new ListNode(2);
-const c = new ListNode(3);
-const d = new ListNode(4);
+const a = new Node(1);
+const b = new Node(2);
+const c = new Node(3);
+const d = new Node(4);
 
 // Link the nodes
 a.next = b;
