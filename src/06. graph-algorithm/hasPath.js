@@ -9,14 +9,12 @@
 // with watching the Approach and Walkthrough. Be productive,
 // not stubborn. -AZ
 
-// Recursive approach (breadth first)
-export const hasPathRecursively = (graph, src, dst, visited) => {
+// Recursive approach (depth first)
+const hasPath = (graph, src, dst) => {
   if (src === dst) return true;
-  if (visited.has(src)) return false;
-  visited.add(src);
 
   for (let neighbor of graph[src]) {
-    if (hasPathRecursively(graph, neighbor, dst, visited) === true) {
+    if (hasPath(graph, neighbor, dst) === true) {
       return true;
     }
   }
@@ -25,11 +23,11 @@ export const hasPathRecursively = (graph, src, dst, visited) => {
 };
 
 // Iterative approach (breadth first)
-export const hasPathIteratively = (graph, src, dest) => {
+const hasPathIteratively = (graph, src, dst) => {
   const queue = [src];
   while (queue.length > 0) {
     const current = queue.shift();
-    if (current === dest) return true;
+    if (current === dst) return true;
     for (let neighbor of graph[current]) {
       queue.push(neighbor);
     }
@@ -46,5 +44,5 @@ const graph = {
   k: [],
 };
 
-console.log(hasPathRecursively(graph, "f", "k"));
+console.log(hasPath(graph, "f", "k"));
 console.log(hasPathIteratively(graph, "f", "k"));

@@ -1,4 +1,4 @@
-export const buildAdjacencyGraph = (edges) => {
+export const buildGraph = (edges) => {
   const graph = {};
 
   for (let edge of edges) {
