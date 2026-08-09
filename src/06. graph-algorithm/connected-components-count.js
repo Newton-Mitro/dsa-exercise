@@ -3,7 +3,7 @@
 // adjacency list of an undirected graph. The function should return
 // the number of connected components within the graph.
 
-export const connectedComponentsCount = (graph) => {
+const connectedComponentsCount = (graph) => {
   const visited = new Set();
   let count = 0;
   for (let node in graph) {
@@ -27,12 +27,16 @@ const explore = (graph, current, visited) => {
 };
 
 const graph = {
-  0: [8, 1, 5],
-  1: [0],
-  5: [0, 8],
-  8: [0, 5],
-  2: [3, 4],
-  3: [2, 4],
-  4: [3, 2],
+  3: [],
+  4: ["6"],
+  6: ["4", "5", "7", "8"],
+  8: ["6"],
+  7: ["6"],
+  5: ["6"],
+  1: ["2"],
+  2: ["1"],
 };
+
+import { drawGraph } from "./build-graph.js";
+drawGraph(graph);
 console.log(connectedComponentsCount(graph));
