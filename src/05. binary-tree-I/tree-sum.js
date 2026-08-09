@@ -1,20 +1,14 @@
 // tree sum
 // Write a function, treeSum, that takes in the root of a binary tree that contains
 // number values. The function should return the total sum of all values in the tree.
-class Node {
-  constructor(val) {
-    this.val = val;
-    this.left = null;
-    this.right = null;
-  }
-}
+import { TreeNode } from "./tree-node.js";
 
-const a = new Node(3);
-const b = new Node(11);
-const c = new Node(4);
-const d = new Node(4);
-const e = new Node(-2);
-const f = new Node(1);
+const a = new TreeNode(3);
+const b = new TreeNode(11);
+const c = new TreeNode(4);
+const d = new TreeNode(4);
+const e = new TreeNode(-2);
+const f = new TreeNode(1);
 
 a.left = b;
 a.right = c;

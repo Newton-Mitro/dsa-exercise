@@ -1,4 +1,4 @@
-class Node {
+export class TreeNode {
   constructor(val) {
     this.val = val;
     this.left = null;

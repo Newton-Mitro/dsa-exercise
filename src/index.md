@@ -93,9 +93,6 @@
 
 ## 6. Graph I
 
-- graph welcome
-- graph intro
-- graph warm-up
 - has path
 - undirected path
 - nodes and edges
@@ -110,8 +107,6 @@
 - best bridge
 - has cycle
 - prereqs possible
-- graph quiz
-- graph wrap up
 
 ## 7. Sliding Window
 

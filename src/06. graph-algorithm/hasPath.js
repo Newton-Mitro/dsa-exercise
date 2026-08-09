@@ -1,16 +1,13 @@
-/* 
-Has Path Problem.
-Complexity: n = nodes, e = edges, Time: O(e) and Space: O(n) | n = nodes, n^2 = edges, Time: O(n^2) and Space: O(n)
-*/
+// has path
+// Write a function, hasPath, that takes in an object representing the
+// adjacency list of a directed acyclic graph and two nodes (src, dst).
+// The function should return a boolean indicating whether or not
+// there exists a directed path between the source and destination
+// nodes.
 
-// const graph = {
-//   f: ["g", "i"],
-//   g: ["h"],
-//   h: [],
-//   i: ["g", "k"],
-//   j: [],
-//   k: [],
-// };
+// Hey. This is our first graph problem, so you should be liberal
+// with watching the Approach and Walkthrough. Be productive,
+// not stubborn. -AZ
 
 // Recursive approach (breadth first)
 export const hasPathRecursively = (graph, src, dst, visited) => {
@@ -40,5 +37,14 @@ export const hasPathIteratively = (graph, src, dest) => {
   return false;
 };
 
-// console.log(hasPathRecursively(graph, "f", "k"));
-// console.log(hasPathIteratively(graph, "f", "k"));
+const graph = {
+  f: ["g", "i"],
+  g: ["h"],
+  h: [],
+  i: ["g", "k"],
+  j: ["i"],
+  k: [],
+};
+
+console.log(hasPathRecursively(graph, "f", "k"));
+console.log(hasPathIteratively(graph, "f", "k"));
