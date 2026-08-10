@@ -103,18 +103,13 @@
 - island count
 - minimum island
 - closest carrot
-- graph multiple choice
 - best bridge
 - has cycle
-- prereqs possible
 
 ## 7. Sliding Window
 
-- sliding window welcome
 - max subarray sum size k
 - max subarray product size k
-- sliding window multiple choice
-- sliding window w/ fixed size recipe
 - subarray target sum size k
 - has substring anagram
 - count substring anagrams
